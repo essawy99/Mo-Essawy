@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+    padding: 0;
+    font-size: calc(1.5vw);
+}
+
+/*-------------------General------------------*/
+body {
+    text-align: center;  
+    background: #e7c9c9da;   
+}
+
+html {
+    background-color: #2a2626;
+}
+
+/*-------------------nav bar------------------*/
+.wrapper {
+	width: 90vw;
+    margin: 0 0vw;  
+}
+
+header {
+	height: 7vw;
+	background: #2a2626;
+	width: 100%;
+	z-index: 100;
+    position: fixed;
+    top: 0vw;
+}
+.logo {
+    margin-right: 0vw;
+    width: 25vw;
+	float: left;
+    line-height: 7.2vw;
+    
+}
+.logo a {
+    padding: .5vw .75vw .5vw 1vw;
+    
+    text-decoration: none;
+	font-size: 2vw;
+	font-family: poppins;
+	color: #fff;
+    letter-spacing: .7vw;
+    border: solid;
+    border-width: .25vw;
+}
+nav {
+    width: 100vw;
+    float: inline-end;
+	line-height: 7vw;;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: .5vw;
+	font-size: 1.3vw;
+	margin: 0 .6vw;
+	color: #fff;
+}
+
+nav a:hover {
+	color: rgb(255, 189, 189);
+}
+
+#aboutMargin {
+    background-color: rgba(0, 0, 255, 0);
+    width: 100%;
+	position: absolute;
+    top: calc(100vh - 7vw);
+    height: 7vw;
+    left: 0;
+
+}
+
+.linkable::before {
+    content:"";
+    display:block;
+    height:7vw; 
+    margin-top: -7vw;
+    visibility: hidden;
+    background-color: #2a262600;
+  }
+
+/*-------------------picture------------------*/
+.banner-area {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 6vw;
+	background-image: url(IMG_1449.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-position: 86%;
+    z-index: 1;
+}
+
+/*-------------------General content------------------*/
+.content-area {
+	width: 100%;
+	position: absolute;
+	top: 100vh;
+    left: 0;
+    margin: 0;
+    z-index: 2;
+    background: #e7c9c9da; 
+}
+
+
+
+.content-area h1 {
+    font-family: poppins;
+    letter-spacing: .3vw;
+    margin-top: 3vh;
+}
+.content-area h2 {
+	font-family: poppins;
+}
+
+section p {
+    font-size: 2vh;
+    padding: 1vh 3vw 1vh 3vw;
+    font-size: 4 vw;
+	font-family: poppins;
+    line-height: 4vh;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 4vh;
+}
+section h2 {
+    font-size: 3.5vh;
+}
+
+section td {
+    font-size: 2vh;
+    text-align: center;
+
+}
+
+/*-------------------About------------------*/
+
+#About h1 {
+    padding-top: 0;
+    margin-top: 2vh;
+}
+
+/*------------------Education-----------------*/
+
+#pure-table {
+    
+    height: 80 vh;
+    width:auto;
+    margin: 5vh 5vh 5vh 5vh;
+    font-family: poppins;
+}
+
+.pure-table tr{
+    margin: 500vh 5vh 5vh 5vh;
+}
+td {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.Description {
+    text-align: justify;
+}
+
+#Projects p {
+
+}
+#Projects h2 {
+    margin: 1vh;
+    font-size: 3.5vh;
+    text-align: left;
+    
+}
+
+iframe {
+    background: none;
+    height: calc(100vh - 7vw);
+    width: 100%;
+    z-index: 10000;
+}
+
+#firstProgram {
+    width : 40vw;
+    height: 40vw;
+    float:right;
+    margin: 1vw;
+    margin-top: 4vh;
+    position:relative;
+    top: 1vw;
+}
+
+
