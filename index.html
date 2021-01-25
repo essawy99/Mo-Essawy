@@ -4,13 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mo Essawy</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link href="stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link id = "desktop" href="stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="box-area">
-		<header>
+    
+    <!-- Desktop Header -->
+    <header id="desktopNav">
 			<div class="wrapper">
 				<div class="logo">
 					<a href="#">MO ESSAWY</a>
@@ -23,220 +27,318 @@
                     <a href="#Contact">CONTACT</a>
 				</nav>
 			</div>
-		</header>
-		<div class="banner-area"></div>
-    <div id = aboutMargin> 
-    <p>d</p>
-    </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header id="mobileNav">
+      <div id="mobileLogo">
+          <a href="#" class="active">MO ESSAWY</a>
+      </div> 
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks" onclick="myFunction()">
+        <a> a</a>
+        <a href="#aboutMargin">ABOUT</a> 
+        <a href="#Education">EDUCATION</a> 
+        <a href="#Projects">PROJECT</a> 
+        <a href="#WorkExp">WORK EXPERIENCE</a> 
+        <a href="#Contact">CONTACT</a>
+      </div>
+      <!-- "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </header>
+    
+	<div class="banner-area"></div>
+  <div id = aboutMargin> 
+  <p>d</p>
+  </div>
  
-		<div class="content-area">
-			<section id="About">
-                <h1> About</h1>
-                <p> I am a student at the University of Minnesota with a passion for technology. Naturally, this interest
-                  drew me to software because of the rapid improvement in the field and the impact it has on our world.
-                  I'm also fascinated by the design of complex systems which makes programming very attractive to me
-                  because it allows me to express my ideas through the creation of  these systems.
-              </p>
-              </section>
+	<div class="content-area">
+		<section id="About">
+      <h1> About</h1>
+      <p> I've always had a deep interest in the science and technology that has enabled the progress 
+          we've made as humans. When I entered college, I decided to pursue this interest
+          by studying Biology. Around the end of my junior year, I began to program in my free time. 
+          I am fascinated by the design of complex systems
+          and programming allows me to express my ideas through the creation of these systems. 
+          I decided to switch to an Inter-Disciplinary degree in Biology and 
+          Computer Science to explore programming further. As I went on in my studies, I realized  
+          that Computer Science is geared towards problem-solving, while Biology
+          focused more on brute memorization. Careers in software entailed creative engineering, while
+          the careers in Biology followed strict protocols. Further, the progress in Biology
+          is slow while computer technology is progressing at an incredible speed
+          disrupting nearly every industry, something I wanted to be a part of. 
+          As I fell in love with software, I decided to get a full degree in Computer Science
+          and pursue a career in software engineering. As I'm progressing in my study of Computer Science I am incredibly
+          grateful that I made that choice and am excited to learn more and gain more experiences in software
+          engineering.
+      </p>
+    </section>
               
-              <section id="Education" class="linkable">
-                <h1> Education</h1>
-                <p>I am currently pursuing a Inter-disciplinary degree
-                  from the University of Minnesota in Computer Science 
-                  and biology where I am fullfilling all of the core.
-                  Computer Science courses. Once I complete my degree, 
-                  I will transfer to a Computer Science program and 
-                  complete electives. To give an understanding of the
-                  Computer Science courses that entail this type of degree
-                  I have outlined below the Computer Science courses in the
-                  program. Currently I have a Cumalative GPA of 3.65. My 
-                  junior/senior year GPA is 3.88, and my Computer Science
-                  GPA is a 4.0.
-                 
-                </p>
-                <table id="pure-table">
-                    <tr>
-                      <th>University</th>
-                      <th>Class</th>
-                      <th>Description</th>
-                      <th>Grade</th>
-                    </tr>
-                    <tr>
-                        <td>Metropolitan State University</td>
-                        <td>Discrete Mathamatics</td>
-                        <td class = "Description">A standard prerequisite mathamatics course that
-                            introduces mathamatical concepts that are common in 
-                            Computer Science such as permutations, discrete probability,
-                            recursive algorithms, symbolic logic, predicate calculus,
-                            mathamatical proofs, mathematical induction, elementary number theory,
-                            functions, relations and directed graphs.
-                        </td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Introduction to Algorithms and Data Structures</td>
-                      <td class = "Description">Introduced common data structures and algorithms
-                          but focused mainly on Object-oriented programming principles
-                          using the Java programming language. I skipped the 
-                          introductory programming course so this course filled the
-                          gaps in my knowledge on programming techniques.
-                      </td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                      <td>Advanced Programming principles</td>
-                      <td class = "Description">An advanced programming course on principles for creating
-                          correct, robust, and modualar programs such as Computing with 
-                          symbolic data, recursion/induction, functional programming, 
-                          impact of evaluation strategies, parallelism, Organizing 
-                          data/computations around types, Search-based programming, 
-                          concurrency, and modularity.
-                      </td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Algorithms and Data Structures</td>
-                        <td class = "Description">Purely Algorithms and Data Structures course
-                            covering topics such as 
-                            Algorithm analysis, sorting algorithms, binary trees, 
-                            heaps, priority queues, Data Structures for Disjoint Sets,
-                            Dynamic programming, Greedy Algorithms 
-                            graphs, Elementary Graph Algorithms, all pairs shortest paths 
-                            single source shortest path, minimum cost spanning trees.
-                        </td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td> Machine Architecture and Organization</td>
-                        <td class = "Description">Course on hardware/software components of computer system. 
-                            Surveys Data representation, boolean algebra, machine-level programs, 
-                            instruction set architecture, processor organization, 
-                            memory hierarchy, virtual memory, compiling, linking and 
-                            Programming in C.</td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Introduction to Operating Systems</td>
-                        <td class = "Description">Jackson</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Software Engineering</td>
-                        <td class = "Description">Jackson</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Principles of Database Systems</td>
-                        <td class = "Description">Jackson</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <td>University of Minnesota (Twin Cities)</td>
-                        <td>Functional Genomics, Systems Biology and Bioinformatics</td>
-                        <td class = "Description">Jackson</td>
-                        <td>N/A</td>
-                    </tr>
-
-                  </table>
-              </section>
+    <section id="Education" class="linkable">
+      <h1> Education</h1>
+      <p>I am currently pursuing a Inter-Disciplinary degree
+          in Computer Science and Biology at the University of Minnesota.
+          I am taking all of the core Computer Science courses, then 
+          I will transfer to a Computer Science program and 
+          complete the electives. To give an understanding of the
+          Computer Science courses that entail this type of degree,
+          I have outlined below the Computer Science courses in the
+          program. Currently, I have a Cumulative GPA of 3.65. My 
+          junior/senior year GPA is 3.88, and my Computer Science
+          GPA is a 4.0.
+      </p>
               
-              <section id="Projects" class="linkable">
-                <h1> Projects</h1>
-                <h2 class = projectSubheader> Description</h2>
-                <p id="b"> I worked with a team of two other people to build a game
-                  using javascript. We did not rely on any game engines but we did use a library 
-                  called paper.js that allowed us to avoid accessing javascript directly to produce
-                  shapes and rely on a couple built in functions to focus our efforts on the actual
-                  game logic.
-                </p>
-                <h2 class = projectSubheader> Motivation </h2>
-                <img id = firstProgram src = "firstProgram.png"></img>
-                <p id="b"> One of the first programs I ever wrote was a brickbreaker game. It was very
-                rudimentary in the way it was architected and fell apart quickly. However, I'm still 
-                nostalgic towards it because it showed me what
-                was possible with even a very basic understanding of programming and built my love
-                for software that led to me switching my career path. Inspired by it, 
-                I recruited a couple of people to build a much larger and more complex version of 
-                the game using my newfound programming skills I've been building in my courses. 
-                The finished product was a game called shipbreaker. 
-                </p>
+      <table class="pure-table">
+        <tr>
+          <th>University</th>
+          <th>Class</th>
+          <th>Description</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td>Metropolitan State University</td>
+          <td>Discrete Mathematics</td>
+          <td class = "Description">A standard prerequisite mathematics course that
+            introduces mathematical concepts that are common in 
+            Computer Science such as permutations, discrete probability,
+            recursive algorithms, symbolic logic, predicate calculus,
+            mathematical proofs, mathematical induction, elementary number theory,
+            functions, relations and directed graphs.
+          </td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Introduction to Algorithms and Data Structures</td>
+          <td class = "Description">Introduced common data structures and algorithms
+            but focused mainly on Object-oriented programming principles
+            using the Java programming language. I skipped the 
+            introductory programming course so this course filled the
+            gaps in my knowledge on common programming techniques.
+          </td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Advanced Programming principles</td>
+          <td class = "Description">An advanced programming course on principles for creating
+            correct, robust, and modular programs such as Computing with 
+            symbolic data, recursion/induction, functional programming, 
+            impact of evaluation strategies, parallelism, Organizing 
+            data/computations around types, Search-based programming, 
+            concurrency, and modularity.
+          </td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Algorithms and Data Structures</td>
+          <td class = "Description">Purely Algorithms and Data Structures course
+            covering topics such as 
+            Algorithm analysis, sorting algorithms, binary trees, 
+            heaps, priority queues, Data Structures for Disjoint Sets,
+            Dynamic programming, Greedy Algorithms 
+            graphs, Elementary Graph Algorithms, all pairs shortest paths 
+            single source shortest path, minimum cost spanning trees.
+          </td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td> Machine Architecture and Organization</td>
+          <td class = "Description">Course on hardware/software components of computer system. 
+            Surveys Data representation, boolean algebra, machine-level programs, 
+            instruction set architecture, processor organization, 
+            memory hierarchy, virtual memory, compiling, linking and 
+            Programming in C.</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Introduction to Operating Systems</td>
+          <td class = "Description">A classic overview of operating systems covering
+            topics such as Processes/threads, process coordination, inter-process communication, 
+            asynchronous events, and memory management/file systems. Includes Systems programming projects 
+            using operating system interfaces and program development tools.
+          </td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Software Engineering</td>
+          <td class = "Description">A graduate level introduction to software engineering, 
+            Software life cycle, development models, software requirements analysis, 
+            software design, coding, maintenance, waterfall, and agile scrum. Includes group
+            project in C/C++</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Principles of Database Systems</td>
+          <td class = "Description">Introductory data management course covering, SQL, database architecture, 
+            alternative conceptual data models, foundations of data manipulation/analysis, 
+            logical data models, database designs, models of database security/integrity, 
+            and current trends.</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>University of Minnesota (Twin Cities)</td>
+          <td>Functional Genomics, Systems Biology and Bioinformatics</td>
+          <td class = "Description"> A computational biology course covering methods of analyzing
+            biological data such as the Statistical Analysis of Genomic Data, Data Mining and Machine 
+            Learning Methods for Genomics, and Biological Network Analysis.
+          </td>
+          <td>N/A</td>
+        </tr>
+      </table>
+    </section>
+              
+    <section id="Projects" class="linkable">
+      <h1> Project</h1>
+      <h2 class = projectSubheader> Motivation </h2>
+      <img id = firstProgram src = "firstProgram.png"></img>
+      <p id="b"> One of the first programs I ever wrote was a brickbreaker game. You can see 
+        a screenshot of it to the left. It had a very rudimentary architecture and fell apart quickly. 
+        However, I'm still nostalgic towards it because it showed me what
+        was possible with even a very basic understanding of programming. It also built my love
+        for software that motivated me to switch my career path. Inspired by it, 
+        I recruited a couple of people to build a much larger and more complex version of 
+        the game using the newfound programming skills I've been building in my courses. 
+      
+      <h2 class = projectSubheader> Description</h2>
+      <p id="b"> I worked with a team of two other people to build the game using javascript. 
+        I made a plan and roadmap and divided out work among teammates. We held regular 
+        meetings where I would come up with revisions to our plans based on our current
+        progress and issues. I would help teammates when they had trouble figuring out what to do, 
+        share my screen to help debug code, and explain algorithms that need to be implemented.
+        We ran into multiple roadblocks and fundamental issues, but it
+        was still a valuable experience in working on a codebase with a team simultaneously and scaling
+        it up to build more functionality.
+        We did not rely on any game engines but we did use a library 
+        called paper.js that allowed us to avoid accessing javascript directly to produce
+        shapes and rely on a couple built in functions to focus our efforts on the actual
+        game logic.
+      </p>
+      
+      <h2 class = projectSubheader> How To Access it </h2>
+      <p id="b"> The finished product is shipbreaker. The codebase is available 
+        <a href="https://github.com/essawy99/game.github.io">here,</a>  and a website 
+        dedicated to the game is <a href="https://essawy99.github.io/game.github.io/">here.</a> 
+        Otherwise scroll down to play the game. The iframe element I used to embed the project
+        can be a little buggy so I
+        recommend accessing it through the website. Click through the Instructions to get an idea
+        of how to play. 
+      </p>
                 
-                <h2 class = projectSubheader> How To Access it </h2>
-                <p id="b"> The codebase is available here, and a website dedicated to the game is here.
-                  Otherwise acroll down to play the game. Click through the Instructions to get an ideas
-                  of how the game works. If you want more screen space to play the game press 
-                  shift-command-f on mac to hide the top of your browser and refresh or play the game on 
-                  the actual website to avoid the website header. As you restart your browser the game builds
-                  based off the width and height of the canvas element its contained in.
-                </p>
-                
-                <h2 class = projectSubheader> Issues </h2>
-                <p>There is some sort of memory leak associated with paper.js that results in a gradual slowdown
-                  of the program as more objects are created. If you take snapshots of the heap as the program
-                  runs you can see it grow despite objects being removed from the project. Unfortunately, this problem 
-                  is in the library and cannot be fixed on my end. However, as a next step, I plan to start digging 
-                  into paper.js andsee if it can be fixed. Then, I can send a pull request and hopefully have 
-                  the problem fixed for everybody as I have seen a number of complaints on the web. The issue
-                  is not extreme and for the most part it is not noticable if you have a higher-end machine.
-                  Development of the game had to be cut short as the new semester started and teamates no longer
-                  wanted to continue to build the game. I did what I could to complete the game but there were a 
-                  few bugs that crept into the final build, and a few features that had to be removed from the game 
-                  before completion. Still, I accomplished what I wanted through building the game which was to
-                  see what happens when developing a relatively large program with a number of people, have a 
-                  chance to be creative and build something cool outside of the constraints of a school setting,
-                  and pay respects to my first ever program using my new programming skills. </p>
+      <h2 class = projectSubheader> Issues </h2>
+      <p>There is some sort of memory leak associated with paper.js that results in a gradual slowdown
+        of the program as more objects are created. It seems that paper.js holds all created objects 
+        in a data structure that is never cleaned out. This data structure is likely iterated through when
+        drawing objects on the screen. Thus, if you take snapshots of the heap as the program
+        runs, you can see it grow despite objects being removed from the project. Unfortunately, this problem 
+        is in the library and cannot be fixed on my end. However, as a next step, I plan to start digging 
+        into paper.js and see if it can be fixed. Then, I can send a pull request and hopefully have 
+        the problem fixed for everybody as I have seen a number of complaints on the web. The issue
+        is not extreme and the game is still enjoyable if you have a higher-end machine. Refreshing the 
+        browser frees the memory and raises performance again.
+        Further, development of the game had to be cut short as the new semester started and teammates no longer
+        wanted to continue to build the game. I did what I could to complete the game, but there were a 
+        few bugs that crept into the final build, and a few features that had to be removed from the game 
+        before completion. Still, I accomplished what I wanted through building the game which was to
+        see what happens when developing a relatively large program with a number of people, have a 
+        chance to be creative and build something cool outside of the constraints of a school setting,
+        and pay respects to my first ever program using my new programming skills. </p>
 
-                  <iframe src="https://essawy99.github.io/game.github.io/" seamless></iframe>
-                  <p>While designing our project we found that it was very tedious to design objects using paper.js 
+        <iframe src="https://essawy99.github.io/game.github.io/" seamless></iframe>
+        <h2 class = projectSubheader> Helper Application </h2>
+        <p>While designing our project we found that it was very tedious to design objects using paper.js 
           in a text editor. 
           It involved a lot of guess and check and I wanted to automate that process. So I volunteered 
           to design a program that allows you to draw objects with your cursor and print out a class  
-          that allows you to place that object on your codebase. With helper functions that allow you 
-          to move and remove that object. It also comes with a save key that allows you to reload and 
-          edit that object at a later time. I would’ve liked to add more features, but I decided its 
+          that that can be inserted into the codebase. The class contains helper functions that allow you 
+          to move and remove the object. It also comes with a save key that allows you to reload and 
+          edit the drawing at a later time. I would’ve liked to add more features, but I decided its 
           best to keep it relatively simple so that I could continue building the actual game. 
-        The UI isn't very easy to use but was built to only be used in house. However, Inbedded it here
-        so you can use it to get an understanding of how it works. The codebase is here in the Creator file
-        Click to add points to create a shape. You can any drag points around but remember that clicking
-        on a different shape selects it and any new points or features added are inserted to that shape
-        Use the toolbar on the left to add another shape or add features to your current shape. It takes
-      some time to get used to but it is much easier to use than paper.js in a text editor. </p>      
+          The UI isn't very easy to use but it was built to only be used in house. The codebase is 
+          <a href="https://github.com/essawy99/Creator">here </a> and you can access the application 
+          <a href="https://essawy99.github.io/Creator/">here. </a> 
+          I embedded the Application
+          below, but I would recommend accessing it directly through the webpage
+          because iframe is very buggy. 
+          Click to add points to create a shape. You can drag any point around but remember that clicking
+          on a different shape selects it and any new points or features added are inserted to that shape.
+          Use the toolbar on the left to add another shape or add features to your current shape. It takes
+          some time to get used to but it is much easier to use than paper.js in a text editor. </p>      
         <iframe src="https://essawy99.github.io/Creator/" seamless></iframe>
         </section>
               
               
               
-              <section id="WorkExp" class="linkable">
-                <h1> Work experience and accomplishments</h1>
-                <p>Though I have yet to attain experience devoloping
-                  software in a work enviornment I have experience
-                  working a number of jobs that involve teamwork,
-                  collaboration, and chain of command.
-                </p>
-                <h2> Referee</h2>
-                <h2> Referee</h2>
-                <h2> Referee</h2>
-                <h2> Referee</h2>
-              </section>
-              <section id="Contact" class="linkable">
-                <h1> Contact</h1>
-                <p> Feel free to reach out to me if you want 
+        <section id="WorkExp" class="linkable">
+          <table class="pure-table">
+          <h1> Work experience</h1>
+          <p>Though I have yet to attain experience developing
+            software in a work environment I have experience
+            working a number of jobs that involve teamwork,
+            collaboration, and chain of command. Below I have outlined 
+            some of my major work experiences and some skills I have
+            built by working them.
+          </p>
+          <tr>
+            <th>Job</th>
+            <th>Description</th>
+            <th>Transferable Skills</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>Referee</td>
+            <td>I worked with a variable group of three people to referee soccer.</td>
+            <td >Ability to communicate and work with a team under pressure. Accountability
+              and confidence in making decisions in high-stress situations. 
+            </td>
+            <td>May 2013 - May 2015</td>
+          </tr>
+          <tr>
+            <td>Cashier/Server Panera Bread</td>
+            <td>I would take orders and serve food at Panera Bread</td>
+            <td >Ability to communicate with a manager. Experience with team meetings
+              and division of labor. Ability to provide customer satisfaction.
+            </td>
+            <td>March 2017 - January 2018</td>
+        </tr>
+        <tr>
+          <td>Parking Attendant</td>
+          <td>The majority of the process is automated so my main job was to 
+            help customers, deal with issues, and assist machines when demand is 
+            high.
+          </td>
+          <td> Quick problem solving and adaptability. Understanding of a hierarchial
+            information flow and teamwork. Ability to communicate with frustrated or 
+            angry people.
+          </td> 
+          <td>February 2019 - current </td>
+        </tr>
+      </table>
+        </section>
+        <section id="Contact" class="linkable">
+          <h1> Contact</h1>
+          <p style = "text-align: center;"> If you'd like to talk feel free to email me at 
+            <a href="mailto:essaw007@umn.edu">essaw007@umn.edu. </a><Br>
+            If you just want to start a conversation connect with
+            me on linkedin at <a href="https://www.linkedin.com/in/mo-essawy">www.linkedin.com/in/mo-essawy </a> <Br>
+            If you would like a quicker repsonse you may message 
+            me at 952-923-4912. <Br>
+          </p>
 
-                </p>
+
               </section>
               
 
-		</div>
-
-    </div>
+          
+    <script type = "text/javascript" src = "dynamicStyle.js"></script>
 
 </body>
 </html>

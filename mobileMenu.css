@@ -1,9 +1,70 @@
-@charset "utf-8";
+
+/* Style the navigation menu */
+#mobileNav {
+    top: 0;
+    left: 0;
+    background: #2a2626;
+    position: fixed;
+    height: 6.5vh;
+    width: 100vw;
+    display: none;
+}
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+#mobileNav #myLinks {
+    display: none;
+    top: 10vh;
+    height: 40vh;
+    background: #2a2626;
+    width: 100%;
+}
+  
+  /* Style navigation menu links */
+  #mobileNav a {
+    color: white;
+    padding: 1vh 5vw;
+    text-decoration: none;
+    font-size: 3vh;
+    display: block;
+    font-family: poppins;
+    letter-spacing: .9vh;
+    text-align: left;
+
+  }
+  
+  /* Style the hamburger menu */
+  #mobileNav a.icon {
+    background:#2a2626;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+ 
+/* Style the active link (or home/logo) */
+#mobileLogo {
+    background-color: #2a2626;
+    color: white;
+  }
+
+#mobileLogo a {
+  margin-top: 2vh;
+  margin: 2vw;
+  padding: .5vh .75vh .5vh 1vh;
+  float: right;
+  text-decoration: none;
+  font-size: 2vh;
+  font-family: poppins;
+  color: #fff;
+  letter-spacing: .7vh;
+  border: solid;
+  border-width: .25vh;
+}
+
 
 * {
 	margin: 0;
     padding: 0;
-    font-size: calc(1.5vw);
 }
 
 /*-------------------General------------------*/
@@ -122,43 +183,47 @@ nav a:hover {
 }
 
 section p {
-    font-size: 2vh;
+    font-size: .7vh;
     padding: 1vh 3vw 1vh 3vw;
+    font-size: 4 vw;
 	font-family: poppins;
     line-height: 4vh;
     text-align: justify;
 }
 
 section h1 {
-    font-size: 4vh;
+    font-size: 2vh;
 }
 section h2 {
-    font-size: 3.5vh;
-}
-
-section td {
-    font-size: 2vh;
-    font-family: poppins;
-    text-align: center;
-}
-
-section tr {
-    font-size: 2vh;
-    font-family: poppins;
-    text-align: center;
-}
-
-section th {
-    font-size: 2vh;
-    font-family: poppins;
-    text-align: center;
+    font-size: 1.5vh;
+    margin: 1vh;
+    font-size: 1.5vh;
+    text-align: left;
 }
 
 section a {
-    font-size: 2vh;
-    font-family: poppins;
-    text-decoration: none;
+  font-family: poppins;
+  text-decoration: none;
 
+}
+
+table {
+  margin : 1vh 1vw 1vh 1vw;
+}
+
+table td {
+  font-size: 1.5vh;
+  font-family: poppins;
+  text-align: center;
+  text-size-adjust: none;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+table th{
+    font-size: 1.8vh;
+    font-family: poppins;
+    text-align: center;
+    text-size-adjust: none;
 }
 
 /*-------------------About------------------*/
@@ -170,38 +235,15 @@ section a {
 
 /*------------------Education-----------------*/
 
-#pure-table {   
-    width:100vw;
-   /*  margin: 5vw 5vw 5vw 5vw; */
-    font-family: poppins;
-    font-size: 2vh;
-
-}
-
-.pure-table tr{
-    margin: 500vh 5vw 5vw 5vw;
-}
-td {
-    padding: 2vh 2vw 2vh 2vw;
-}
 
 .Description {
     text-align: justify;
 }
 
-#Projects p {
-
-}
-#Projects h2 {
-    margin: 1vh;
-    font-size: 3.5vh;
-    text-align: left;
-    
-}
 
 iframe {
     background: none;
-    height: calc(100vh - 7vw);
+    height: calc(100vh - 6.5vh);
     width: 100%;
     z-index: 10000;
 }
